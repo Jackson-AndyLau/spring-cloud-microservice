@@ -1,5 +1,5 @@
 server: 
-  port: 8002  # 自定义服务端口
+  port: 7001  # 自定义服务端口
 
 eureka:
   instance:
