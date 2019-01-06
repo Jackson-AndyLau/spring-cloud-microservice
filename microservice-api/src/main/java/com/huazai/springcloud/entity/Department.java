@@ -31,6 +31,7 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 @AllArgsConstructor
 @NoArgsConstructor
+
 @Data
 public class Department implements Serializable // 序列化
 {
