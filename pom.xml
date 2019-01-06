@@ -73,9 +73,10 @@
 	</dependencyManagement>
 	<modules>
 		<module>microservice-api</module>
-		<module>microservice-provider</module>
-		<module>microservice-consumer</module>
-		<module>microservice-eureka</module>
+		<module>microservice-provider-8001</module>
+		<module>microservice-consumer-80</module>
+		<module>microservice-eureka-7001</module>
+		<module>microservice-eureka-7002</module>
 	</modules>
 </project>
 

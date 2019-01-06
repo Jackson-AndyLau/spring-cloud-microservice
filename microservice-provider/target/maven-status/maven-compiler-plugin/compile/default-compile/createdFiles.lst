@@ -1,5 +1,0 @@
-com\huazai\springcloud\controller\DepartmentController.class
-com\huazai\springcloud\service\impl\DepartmentServiceImpl.class
-com\huazai\springcloud\MicroserviceProviderApp.class
-com\huazai\springcloud\dao\DepartmentDao.class
-com\huazai\springcloud\service\DepartmentService.class
