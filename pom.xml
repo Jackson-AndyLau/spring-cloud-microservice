@@ -78,6 +78,7 @@
 		<module>microservice-eureka-7001</module>
 		<module>microservice-eureka-7002</module>
 		<module>microservice-eureka-7003</module>
+		<module>microservice-feign</module>
 	</modules>
 </project>
 
