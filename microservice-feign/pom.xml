@@ -14,7 +14,8 @@
 
 	<!-- 项目依赖包 -->
 	<dependencies>
-		<dependency><!-- 自己定义的api -->
+		<dependency>
+			<!-- 自己定义的api -->
 			<groupId>com.huazai.springcloud</groupId>
 			<artifactId>microservice-api</artifactId>
 			<version>${project.version}</version>
@@ -22,6 +23,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<!-- 添加对 feign 的支持 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-feign</artifactId>
 		</dependency>
 		<!-- 修改后立即生效，热部署 -->
 		<dependency>

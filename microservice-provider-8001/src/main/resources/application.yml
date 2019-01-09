@@ -25,6 +25,18 @@ spring:
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url: 
-      defaultZone: http://localhost:7001/eureka
+#      defaultZone: http://localhost:7001/eureka # 单机的使用的
+      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
+       
+  instance:
+    instance-id: microservice-provider-8001
+    prefer-ip-address: true
+
+info:
+  app.name: learning-microservice-springcloud
+  company.name: huazai-studio
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+  
  
  
