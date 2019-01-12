@@ -10,8 +10,8 @@
 		<version>${project.version}</version>
 	</parent>
 
-	<artifactId>microservice-provider-8001</artifactId>
-	<description>服务提供者模块-8001</description>
+	<artifactId>microservice-provider-8003</artifactId>
+	<description>服务提供者模块-8003</description>
 
 	<dependencies>
 		<dependency><!-- 引入自己定义的api通用包，可以使用Dept部门Entity -->

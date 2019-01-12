@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.huazai.springcloud.entity.Department;
@@ -23,13 +25,14 @@ public class DepartmentController
 	@RequestMapping(value = "/add", method = RequestMethod.POST)
 	public boolean add(@RequestBody Department department)
 	{
+//		Department department =  new Department(name);
 		return departmentService.add(department);
 	}
 
 	@RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
 	public void delete(@PathVariable Long id)
 	{
-
+		System.out.println(id);
 	}
 
 	@RequestMapping(value = "/update", method = RequestMethod.PUT)
