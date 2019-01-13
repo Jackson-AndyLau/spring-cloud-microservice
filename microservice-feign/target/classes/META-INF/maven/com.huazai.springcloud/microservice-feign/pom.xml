@@ -14,8 +14,8 @@
 
 	<!-- 项目依赖包 -->
 	<dependencies>
+		<!-- 引入自己定义的 api -->
 		<dependency>
-			<!-- 自己定义的api -->
 			<groupId>com.huazai.springcloud</groupId>
 			<artifactId>microservice-api</artifactId>
 			<version>${project.version}</version>
@@ -28,6 +28,11 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-feign</artifactId>
+		</dependency>
+		<!-- 对 Eureka 的支持 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
 		<!-- 修改后立即生效，热部署 -->
 		<dependency>
