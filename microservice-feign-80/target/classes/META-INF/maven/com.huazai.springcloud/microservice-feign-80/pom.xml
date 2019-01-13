@@ -9,8 +9,8 @@
 		<version>${project.version}</version>
 	</parent>
 
-	<artifactId>microservice-feign</artifactId>
-	<description>服务消费者模块</description>
+	<artifactId>microservice-feign-80</artifactId>
+	<description>服务消费者模块-feign-80</description>
 
 	<!-- 项目依赖包 -->
 	<dependencies>

@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>microservice-consumer-80</artifactId>
-	<description>服务消费者模块-80</description>
+	<description>服务消费者模块-consumer-80</description>
 
 	<!-- 项目依赖包 -->
 	<dependencies>
