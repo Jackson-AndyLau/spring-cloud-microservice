@@ -103,6 +103,7 @@
 		<module>microservice-feign-80</module>
 		<module>microservice-provider-8002</module>
 		<module>microservice-provider-8003</module>
+		<module>microservice-hystrix-8001</module>
 	</modules>
 </project>
 

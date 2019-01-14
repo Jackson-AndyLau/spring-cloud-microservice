@@ -2,14 +2,9 @@ package com.huazai.springcloud.entity;
 
 import java.io.Serializable;
 
-import javax.sound.midi.Track;
-
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
 import lombok.experimental.Accessors;
-import lombok.experimental.FieldDefaults;
 
 /**
  * 
@@ -30,15 +25,15 @@ import lombok.experimental.FieldDefaults;
  */
 @SuppressWarnings("unused")
 @Accessors(chain = true)
-//@AllArgsConstructor
+// @AllArgsConstructor
 @NoArgsConstructor
 
 @Data
 public class Department implements Serializable // 序列化
 {
-	/** 
-	 * @Files serialVersionUID : TODO 
-	 */  
+	/**
+	 * @Files serialVersionUID : TODO
+	 */
 	private static final long serialVersionUID = -1362631725686764212L;
 	private Long deptno; // 主键
 	private String dname; // 部门名称

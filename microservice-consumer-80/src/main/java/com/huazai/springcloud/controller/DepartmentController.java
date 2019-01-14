@@ -65,7 +65,6 @@ public class DepartmentController
 	public void update(@RequestBody Department department)
 	{
 		restTemplate.put(BASE_APPLICATION_URL_PREFIX + "/update", department, Department.class);
-		;
 	}
 
 	@RequestMapping(value = "/get/{id}", method = RequestMethod.GET)
