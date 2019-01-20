@@ -105,6 +105,7 @@
 		<module>microservice-provider-8003</module>
 		<module>microservice-hystrix-8001</module>
 		<module>microservice-hystrix-dashboard-9001</module>
+		<module>microservice-zuul-6001</module>
 	</modules>
 </project>
 

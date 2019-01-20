@@ -14,7 +14,8 @@
 	<description>服务提供者模块-8003</description>
 
 	<dependencies>
-		<dependency><!-- 引入自己定义的api通用包，可以使用Dept部门Entity -->
+	<!-- 引入自己定义的api通用包，可以使用Dept部门Entity -->
+		<dependency>
 			<groupId>com.huazai.springcloud</groupId>
 			<artifactId>microservice-api</artifactId>
 			<version>${project.version}</version>
