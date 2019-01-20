@@ -10,6 +10,7 @@
 	</parent>
 
 	<artifactId>microservice-zuul-6001</artifactId>
+	<description>zuul 路由网关模块-6001</description>
 
 	<dependencies>
 		<!-- 引入自己定义的api通用包 -->

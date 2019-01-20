@@ -14,7 +14,7 @@
 	<description>服务提供者模块-8003</description>
 
 	<dependencies>
-	<!-- 引入自己定义的api通用包，可以使用Dept部门Entity -->
+		<!-- 引入自己定义的api通用包，可以使用Dept部门Entity -->
 		<dependency>
 			<groupId>com.huazai.springcloud</groupId>
 			<artifactId>microservice-api</artifactId>
@@ -24,6 +24,7 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 		</dependency>
+		<!-- 数据库相关 -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -36,6 +37,7 @@
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-core</artifactId>
 		</dependency>
+		<!-- spring boot 相关 -->
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
 			<artifactId>mybatis-spring-boot-starter</artifactId>
