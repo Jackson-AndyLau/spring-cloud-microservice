@@ -11,7 +11,7 @@
 	</parent>
 
 	<!-- 当前Module我自己叫什么名字 -->
-	<artifactId>microservice-config-5001</artifactId>
+	<artifactId>microservice-config-service-5001</artifactId>
 
 	<dependencies>
 		<!-- springCloudConfig相关 -->
