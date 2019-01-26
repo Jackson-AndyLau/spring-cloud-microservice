@@ -6,20 +6,17 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 
 /**
  * 
- * <p>
- * 
- * @ClassName : MicroserviceEurekaApp
- *            </p>
- *            <p>
- * @Description : TODO
- *              </p>
- * 
- * @Author : HuaZai
- * @ContactInformation : who.seek.me@java98k.vip
- * @Date : 2018年12月23日 下午9:02:12
- * @Version : V1.0.0
- * 
- * @param
+ * @author HuaZai
+ * @contact who.seek.me@java98k.vip
+ *          <ul>
+ * @description
+ *              <li>微服务监控服务器
+ *              </ul>
+ * @className MicroserviceHystrixDashboardApp_9001
+ * @package com.huazai.springcloud
+ * @createdTime 2018年5月26日 下午4:42:43
+ *
+ * @version V1.0.0
  */
 @SpringBootApplication
 @EnableHystrixDashboard // 开启服务调用监控

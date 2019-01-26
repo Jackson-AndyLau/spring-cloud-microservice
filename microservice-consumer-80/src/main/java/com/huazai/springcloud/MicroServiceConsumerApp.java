@@ -6,20 +6,17 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * 
- * <p>
- * 
- * @ClassName : MicroServiceConsumerApp
- *            </p>
- *            <p>
- * @Description : TODO
- *              </p>
- * 
- * @Author : HuaZai
- * @ContactInformation : who.seek.me@java98k.vip
- * @Date : 2018年12月23日 下午8:49:56
- * @Version : V1.0.0
- * 
- * @param
+ * @author HuaZai
+ * @contact who.seek.me@java98k.vip
+ *          <ul>
+ * @description
+ *              <li>服务消费者
+ *              </ul>
+ * @className MicroServiceConsumerApp
+ * @package com.huazai.springcloud
+ * @createdTime 2018年11月22日 下午3:47:02
+ *
+ * @version V1.0.0
  */
 @SpringBootApplication
 @EnableEurekaClient

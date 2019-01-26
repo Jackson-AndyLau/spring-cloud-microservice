@@ -6,20 +6,17 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * 
- * <p>
- * 
- * @ClassName : MicroserviceEurekaApp
- *            </p>
- *            <p>
- * @Description : TODO
- *              </p>
- * 
- * @Author : HuaZai
- * @ContactInformation : who.seek.me@java98k.vip
- * @Date : 2018年12月23日 下午9:02:12
- * @Version : V1.0.0
- * 
- * @param
+ * @author HuaZai
+ * @contact who.seek.me@java98k.vip
+ *          <ul>
+ * @description
+ *              <li>Eureka 注册中心1号服务器
+ *              </ul>
+ * @className MicroserviceEurekaApp_7001
+ * @package com.huazai.springcloud
+ * @createdTime 2018年12月26日 下午5:46:11
+ *
+ * @version V1.0.0
  */
 @SpringBootApplication
 @EnableEurekaServer // 表示 EurekaServer 服务器端启动类,并接受其它微服务注册进来

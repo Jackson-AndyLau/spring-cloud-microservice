@@ -1,0 +1,14 @@
+server:
+  port: 5001
+  
+spring:
+  application:
+    name: microservice-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Jackson-AndyLau/microservice-config-center.git # GitHub远程配置中心地址
+#       server:
+#        svn:
+#          uri: https://192.168.159.151:42519/microservice-config/dev-etcp-microservice-config-center.yml # Subversion远程配置中心地址

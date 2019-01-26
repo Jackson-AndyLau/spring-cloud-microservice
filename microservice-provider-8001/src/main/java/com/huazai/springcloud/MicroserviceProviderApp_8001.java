@@ -10,9 +10,9 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  * @contact who.seek.me@java98k.vip
  *          <ul>
  * @description
- *              <li>服务提供者服务器一
+ *              <li>服务提供者1号服务器
  *              </ul>
- * @className MicroserviceProviderApp
+ * @className MicroserviceProviderApp_8001
  * @package com.huazai.springcloud
  * @createdTime 2019年1月6日 下午2:21:44
  *

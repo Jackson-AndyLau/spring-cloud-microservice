@@ -10,9 +10,9 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
  * @contact who.seek.me@java98k.vip
  *          <ul>
  * @description 
- *              <li>服务提供者服务器一
+ *              <li>zuul 路由网关
  *              </ul>
- * @className MicroserviceProviderApp
+ * @className MicroserviceZuulApp_6001
  * @package com.huazai.springcloud
  * @createdTime 2019年1月6日 下午2:21:44
  *

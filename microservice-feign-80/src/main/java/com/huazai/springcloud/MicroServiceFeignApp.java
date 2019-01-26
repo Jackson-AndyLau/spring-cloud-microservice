@@ -8,20 +8,17 @@ import org.springframework.context.annotation.ComponentScan;
 
 /**
  * 
- * <p>
- * 
- * @ClassName : MicroServiceConsumerApp
- *            </p>
- *            <p>
- * @Description : TODO
- *              </p>
- * 
- * @Author : HuaZai
- * @ContactInformation : who.seek.me@java98k.vip
- * @Date : 2018年12月23日 下午8:49:56
- * @Version : V1.0.0
- * 
- * @param
+ * @author HuaZai
+ * @contact who.seek.me@java98k.vip
+ *          <ul>
+ * @description
+ *              <li>Feign 负载均衡器
+ *              </ul>
+ * @className MicroServiceFeignApp
+ * @package com.huazai.springcloud
+ * @createdTime 2018年5月26日 下午4:44:03
+ *
+ * @version V1.0.0
  */
 @SpringBootApplication
 @EnableEurekaClient
