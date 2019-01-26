@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    active: dev   # 默认为开发环境
+    
+---
+spring:
+  profiles: dev   # 开发环境
+  application: 
+    name: dev-etcp-microservice-config-center
+    
+---
+spring:
+  profiles: test    # 测试环境
+  application: 
+    name: test-etcp-microservice-config-center
+    
+---
+spring:
+  profiles: prod    # 生产环境
+  application: 
+    name: prod-etcp-microservice-config-center
+ 
+ 
