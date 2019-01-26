@@ -12,7 +12,7 @@ import org.springframework.cloud.config.server.EnableConfigServer;
  * @description
  *              <li>服务提配置中心
  *              </ul>
- * @className MicroserviceProviderApp
+ * @className MicroserviceConfigApp_5001
  * @package com.huazai.springcloud
  * @createdTime 2019年1月6日 下午2:21:44
  *

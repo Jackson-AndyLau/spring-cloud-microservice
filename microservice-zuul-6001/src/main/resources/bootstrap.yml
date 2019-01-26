@@ -1,6 +1,7 @@
 spring:
   profiles:
-    active: dev   # 默认为开发环境
+    active:
+    - dev # 默认的开发环境
     
 ---
 spring:
