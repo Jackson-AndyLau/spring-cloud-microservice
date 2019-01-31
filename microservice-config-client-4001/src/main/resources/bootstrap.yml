@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+#      name: client-microservice-config-center # 从github上读取指定名称的资源配置信息，注意不加任何后缀
+      profile: dev # 配置默认的环境
+      label: master # 从 master 分支上获取配置信息
+      uri: http://www.config5001.com # 本地配置客户端启动后，会去找5001config服务端服务器，通过SpringCloudConfig获取GitHub的服务地址

@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: client-microservice-config-center # 从github上读取指定名称的资源配置信息，注意不加任何后缀
