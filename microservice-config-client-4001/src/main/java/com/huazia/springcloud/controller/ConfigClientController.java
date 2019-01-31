@@ -33,28 +33,28 @@ public class ConfigClientController
 	/**
 	 * 当前使用环境
 	 */
-/*	@Value("${spring.profiles}")
-	private String env;*/
+	@Value("${spring.profiles}")
+	private String env;
 	
 	/**
 	 * 端口号
 	 */
-//	@Value("${server.port}")
-//	private String port;
+	@Value("${server.port}")
+	private String port;
 	
 	/**
 	 * 使用的那台 eureka 服务器
 	 */
-//	@Value("${eureka.client.service-url.defaultZone}")
-//	private String eurekaService;
+	@Value("${eureka.client.service-url.defaultZone}")
+	private String eurekaService;
 	
 	@RequestMapping("/getInfo")
 	public Map<String, String> getConfigInfo(){
 		Map<String, String> map = new HashMap<>();
 		map.put("applicationName", applicationName);
-//		map.put("env", env);
-//		map.put("port", port);
-//		map.put("eurekaService", eurekaService);
+		map.put("env", env);
+		map.put("port", port);
+		map.put("eurekaService", eurekaService);
 		
 		return map;
 	}
