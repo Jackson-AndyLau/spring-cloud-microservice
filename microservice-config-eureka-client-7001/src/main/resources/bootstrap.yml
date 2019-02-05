@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      name: microservice-config-eureka-client # 从 github 上读取的资源名称，注意没有yml后缀名
+      profile: dev
+      label: master
+      uri: http://www.config5001.com  # Spring Cloud Config 获取的服务地址
+      
