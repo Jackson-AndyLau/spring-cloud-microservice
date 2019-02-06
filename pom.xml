@@ -108,8 +108,8 @@
 		<module>microservice-zuul-6001</module>
 		<module>microservice-config-service-5001</module>
 		<module>microservice-config-client-4001</module>
-		<module>microservice-config-eureka-client-7001</module>
-		<module>microservice-config-provider-client-8001</module>
+		<module>microservice-config-eureka-7001</module>
+		<module>microservice-config-provider-8001</module>
 	</modules>
 </project>
 
