@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: etcp-client-microservice-config-center

@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      name: etcp-client-microservice-config-center # 从 github 上读取的资源名称，注意没有yml后缀名
+      profile: prod # 配置默认的环境
+      label: master # 从 master 分支上获取配置信息
+      uri: http://www.config5001.com:5001  # Spring Cloud Config 获取的服务地址
+      
