@@ -2,7 +2,6 @@ package com.huazai.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * 
@@ -14,12 +13,12 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  *              </ul>
  * @className MicroServiceConsumerApp
  * @package com.huazai.springcloud
- * @createdTime 2018年11月22日 下午3:47:02
+ * @createdTime 2018年05月22日 下午3:47:02
  *
  * @version V1.0.0
  */
 @SpringBootApplication
-@EnableEurekaClient
+//@EnableEurekaClient
 public class MicroServiceConsumerApp
 {
 

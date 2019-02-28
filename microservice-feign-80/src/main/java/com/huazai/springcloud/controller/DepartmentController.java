@@ -24,7 +24,7 @@ import com.huazai.springcloud.service.DepartmentClientService;
  * 
  * @Author : HuaZai
  * @ContactInformation : who.seek.me@java98k.vip
- * @Date : 2018年12月23日 下午9:01:38
+ * @Date : 2018年05月23日 下午9:01:38
  * @Version : V1.0.0
  * 
  * @param

@@ -1,6 +1,5 @@
 package com.huazai.springcloud.cfgbeans;
 
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
@@ -17,7 +16,7 @@ import org.springframework.web.client.RestTemplate;
  * 
  * @Author : HuaZai
  * @ContactInformation : who.seek.me@java98k.vip
- * @Date : 2018年12月23日 下午9:01:21
+ * @Date : 2018年05月23日 下午9:01:21
  * @Version : V1.0.0
  * 
  * @param
@@ -26,7 +25,7 @@ import org.springframework.web.client.RestTemplate;
 public class ConfigBean
 {
 	@Bean
-	@LoadBalanced
+//	@LoadBalanced
 	public RestTemplate getRestTemplate()
 	{
 		return new RestTemplate();

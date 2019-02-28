@@ -14,7 +14,7 @@ import org.springframework.cloud.config.server.EnableConfigServer;
  *              </ul>
  * @className MicroserviceConfigServiceApp_5001
  * @package com.huazai.springcloud
- * @createdTime 2019年1月6日 下午5:24:36
+ * @createdTime 2018年05月06日 下午5:24:36
  *
  * @version V1.0.0
  */

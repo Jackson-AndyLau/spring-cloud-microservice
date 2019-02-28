@@ -14,7 +14,7 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
  *              </ul>
  * @className MicroserviceZuulApp_6001
  * @package com.huazai.springcloud
- * @createdTime 2019年1月6日 下午2:21:44
+ * @createdTime 2018年06月06日 下午2:21:44
  *
  * @version V1.0.0
  */

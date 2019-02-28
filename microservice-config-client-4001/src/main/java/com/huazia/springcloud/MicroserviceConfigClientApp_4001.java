@@ -12,7 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *              </ul>
  * @className MicroserviceConfigClientApp_4001
  * @package com.huazia.springcloud
- * @createdTime 2019年1月31日 下午7:07:07
+ * @createdTime 2018年05月31日 下午7:07:07
  *
  * @version V1.0.0
  */

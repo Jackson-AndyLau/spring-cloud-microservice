@@ -24,7 +24,7 @@ import com.huazai.springcloud.entity.Department;
  * 
  * @Author : HuaZai
  * @ContactInformation : who.seek.me@java98k.vip
- * @Date : 2018年12月23日 下午9:01:38
+ * @Date : 2018年05月23日 下午9:01:38
  * @Version : V1.0.0
  * 
  * @param
@@ -44,6 +44,7 @@ public class DepartmentController
 	 * 终极 -> 通过 Spring 的 RestTemplate + Eureka 注册中心服务列表的提供者应用名称进行访问
 	 * （Ribbon和Eureka整合后Consumer可以直接调用服务而不用再关心地址和端口号）
 	 */
+	@SuppressWarnings("unused")
 	private static final String BASE_APPLICATION_URL_PREFIX = "http://MICROSERVICE-PROVIDER/department";
 
 	@Autowired
@@ -52,30 +53,36 @@ public class DepartmentController
 	@RequestMapping(value = "/add", method = RequestMethod.POST)
 	public boolean add(@RequestBody Department department)
 	{
-		return restTemplate.postForObject(BASE_APPLICATION_URL_PREFIX + "/add", department, Boolean.class);
+		return restTemplate.postForObject(BASE_URL_PREFIX + "/add", department, Boolean.class);
 	}
 
 	@RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
 	public void delete(@PathVariable Long id)
 	{
-		restTemplate.delete(BASE_APPLICATION_URL_PREFIX + "/delete/" + id, id);
+		restTemplate.delete(BASE_URL_PREFIX + "/delete/" + id, id);
 	}
 
 	@RequestMapping(value = "/update", method = RequestMethod.PUT)
 	public void update(@RequestBody Department department)
 	{
-		restTemplate.put(BASE_APPLICATION_URL_PREFIX + "/update", department, Department.class);
+		restTemplate.put(BASE_URL_PREFIX + "/update", department, Department.class);
 	}
 
 	@RequestMapping(value = "/get/{id}", method = RequestMethod.GET)
 	public Department get(@PathVariable Long id)
 	{
-		return restTemplate.getForObject(BASE_APPLICATION_URL_PREFIX + "/get/" + id, Department.class);
+		return restTemplate.getForObject(BASE_URL_PREFIX + "/get/" + id, Department.class);
 	}
 
 	@RequestMapping(value = "/list")
 	public List<Department> list()
 	{
-		return restTemplate.getForObject(BASE_APPLICATION_URL_PREFIX + "/list", List.class);
+		return restTemplate.getForObject(BASE_URL_PREFIX + "/list", List.class);
+	}
+	
+	@RequestMapping(value = "/getDiscoverList")
+	public Object getDiscoverList()
+	{
+		return restTemplate.getForObject(BASE_URL_PREFIX + "/getDiscoverList", List.class);
 	}
 }

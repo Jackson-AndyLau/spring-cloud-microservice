@@ -71,7 +71,8 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	
+
+	<!-- 配置加载的资源以及插件，否则后面项目会报错，无法启动 -->
 	<build>
 		<finalName>microservicecloud</finalName>
 		<resources>
@@ -93,6 +94,7 @@
 		</plugins>
 	</build>
 
+	<!-- 这个是后面新建了多少个模块，这儿就会包含相应的模块 -->
 	<modules>
 		<module>microservice-api</module>
 		<module>microservice-provider-8001</module>

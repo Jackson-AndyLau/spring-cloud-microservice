@@ -14,7 +14,7 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
  *              </ul>
  * @className MicroserviceHystrixDashboardApp_9001
  * @package com.huazai.springcloud
- * @createdTime 2018年5月26日 下午4:42:43
+ * @createdTime 2018年05月26日 下午4:42:43
  *
  * @version V1.0.0
  */

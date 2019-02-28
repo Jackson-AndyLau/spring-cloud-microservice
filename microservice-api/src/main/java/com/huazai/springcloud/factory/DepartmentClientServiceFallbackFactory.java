@@ -17,10 +17,10 @@ import feign.hystrix.FallbackFactory;
  *          <ul>
  * @description TODO
  *              </ul>
- *              
+ * 
  * @className DepartmentClientServiceFallbackFactory
  * @package com.huazai.springcloud.factory
- * @createdTime 2019年1月14日 下午7:48:16
+ * @createdTime 2018年05月14日 下午7:48:16
  *
  * @version V1.0.0
  */

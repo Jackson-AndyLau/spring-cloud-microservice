@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  *              </ul>
  * @className ConfigClientController
  * @package com.huazia.springcloud
- * @createdTime 2019年1月31日 下午7:06:38
+ * @createdTime 2018年05月31日 下午7:06:38
  *
  * @version V1.0.0
  */

@@ -16,7 +16,7 @@ import org.springframework.context.annotation.ComponentScan;
  *              </ul>
  * @className MicroServiceFeignApp
  * @package com.huazai.springcloud
- * @createdTime 2018年5月26日 下午4:44:03
+ * @createdTime 2018年05月26日 下午4:44:03
  *
  * @version V1.0.0
  */

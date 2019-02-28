@@ -20,7 +20,7 @@ import com.huazai.springcloud.factory.DepartmentClientServiceFallbackFactory;
  *              </ul>
  * @className DepartmentClientService
  * @package com.huazai.springcloud.service
- * @createdTime 2019年1月13日 下午8:21:01
+ * @createdTime 2018年05月13日 下午8:21:01
  *
  * @version V1.0.0
  */

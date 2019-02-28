@@ -15,7 +15,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  *              </ul>
  * @className MicroserviceProviderApp_8001
  * @package com.huazai.springcloud
- * @createdTime 2019年1月6日 下午2:21:44
+ * @createdTime 2018年05月06日 下午2:21:44
  *
  * @version V1.0.0
  */
