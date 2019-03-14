@@ -25,11 +25,11 @@ spring:
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url: 
-      defaultZone: http://www.eureka7001.com:7001/eureka # 单机的使用的
-#      defaultZone: http://www.eureka7001.com:7001/eureka/,http://www.eureka7002.com:7002/eureka/,http://www.eureka7003.com:7003/eureka/
+#      defaultZone: http://www.eureka7001.com:7001/eureka # 单机的使用的
+      defaultZone: http://www.eureka7001.com:7001/eureka/,http://www.eureka7002.com:7002/eureka/,http://www.eureka7003.com:7003/eureka/
        
   instance:
-    instance-id: 服务提供者-1号服务器
+    instance-id: microservice-provider-8001
     prefer-ip-address: true
 
 
