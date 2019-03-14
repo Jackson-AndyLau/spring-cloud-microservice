@@ -17,8 +17,8 @@ eureka:
 
 zuul:
   prefix: /etcp # 添加公共的前缀
-#  ignored-services: microservice-provider # 忽略单个服务ID
-  ignored-services: "*" # 忽略多个服务ID，使用*号，注意需要添加双引号哟，否则是char类型的，会报错，当然还可以以集合的形式进行忽略指定的多个服务ID
+  ignored-services: microservice-provider # 忽略单个服务ID
+#  ignored-services: "*" # 忽略多个服务ID，使用*号，注意需要添加双引号哟，否则是char类型的，会报错，当然还可以以集合的形式进行忽略指定的多个服务ID
   routes:
     microservice.serviceId: microservice-provider
     microservice.path: /java98k/**
