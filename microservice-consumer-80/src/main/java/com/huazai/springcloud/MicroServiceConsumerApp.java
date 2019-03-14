@@ -2,6 +2,11 @@ package com.huazai.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.ribbon.RibbonClient;
+
+import com.huazai.springcloud.cfgbeans.ConfigBean;
+import com.huazai.springcloud.cfgbeans.IRuleConfig;
 
 /**
  * 
@@ -18,7 +23,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @version V1.0.0
  */
 @SpringBootApplication
-//@EnableEurekaClient
+@EnableEurekaClient
+@RibbonClient(name = "MICROSERVICE-PROVIDER", configuration = IRuleConfig.class) // MICROSERVICE-PROVIDER 应用名称
 public class MicroServiceConsumerApp
 {
 

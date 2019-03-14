@@ -53,36 +53,36 @@ public class DepartmentController
 	@RequestMapping(value = "/add", method = RequestMethod.POST)
 	public boolean add(@RequestBody Department department)
 	{
-		return restTemplate.postForObject(BASE_URL_PREFIX + "/add", department, Boolean.class);
+		return restTemplate.postForObject(BASE_APPLICATION_URL_PREFIX + "/add", department, Boolean.class);
 	}
 
 	@RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
 	public void delete(@PathVariable Long id)
 	{
-		restTemplate.delete(BASE_URL_PREFIX + "/delete/" + id, id);
+		restTemplate.delete(BASE_APPLICATION_URL_PREFIX + "/delete/" + id, id);
 	}
 
 	@RequestMapping(value = "/update", method = RequestMethod.PUT)
 	public void update(@RequestBody Department department)
 	{
-		restTemplate.put(BASE_URL_PREFIX + "/update", department, Department.class);
+		restTemplate.put(BASE_APPLICATION_URL_PREFIX + "/update", department, Department.class);
 	}
 
 	@RequestMapping(value = "/get/{id}", method = RequestMethod.GET)
 	public Department get(@PathVariable Long id)
 	{
-		return restTemplate.getForObject(BASE_URL_PREFIX + "/get/" + id, Department.class);
+		return restTemplate.getForObject(BASE_APPLICATION_URL_PREFIX + "/get/" + id, Department.class);
 	}
 
 	@RequestMapping(value = "/list")
 	public List<Department> list()
 	{
-		return restTemplate.getForObject(BASE_URL_PREFIX + "/list", List.class);
+		return restTemplate.getForObject(BASE_APPLICATION_URL_PREFIX + "/list", List.class);
 	}
 	
 	@RequestMapping(value = "/getDiscoverList")
 	public Object getDiscoverList()
 	{
-		return restTemplate.getForObject(BASE_URL_PREFIX + "/getDiscoverList", List.class);
+		return restTemplate.getForObject(BASE_APPLICATION_URL_PREFIX + "/getDiscoverList", List.class);
 	}
 }
