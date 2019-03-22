@@ -111,12 +111,60 @@ Eureka 微服务子模块注册中心项目创建完成后，项目工程概览�
 
 原文连接：[《 Rest微服务加入Ribbon负载均衡客户端组件实现负载均衡 》](https://blog.csdn.net/Hello_World_QWP/article/details/87917236)  
 
-# 第五章：OpenFeign/Feign
+# 第五章：OpenFeign/Feign  
+## 1、Feign 基本理论概述
+&#8195;&#8195;本节主要对 OpenFeign 进行了基本的介绍，包括：
+- 什么是 Feign ？
+- Feign 的作用？
+- Feign 与 JDK 版本的兼容性？
+- 以及Feign 常用注解的说明和使用示例？  
 
+原文连接：[《 Feign 基本理论概述 》](https://blog.csdn.net/Hello_World_QWP/article/details/86476825)  
 
-# 第六章：Netflix/Hystrix
-接入Hystrix断路器，实现服务的熔断与降级
-接入Hystrix-Dashboard，实现微服务监控
+## 2、Spring Cloud 进阶--Rest微服务加入Feign负载均衡客户端组件（通过接口方式调用Rest服务）
+&#8195;&#8195;在上一篇章节中，主要完成了 [《 Rest微服务加入Ribbon负载均衡客户端组件实现负载均衡 》](https://blog.csdn.net/Hello_World_QWP/article/details/87917236)  ，并且完成了 [《 Feign 基本理论概述 》](https://blog.csdn.net/Hello_World_QWP/article/details/86476825) 的详细简介，本节将带领读者完整在 Rest 微服务中集成 Feign 负载均衡客户端组件，并通接口嗲用的方式实现服务的调用，本节主要主要涉及模块，包括：  
+- 修改整体微服务项目的公共子模块，供其它子模块引用，达到通用的目的，项目名为 “ microservice-api ”；
+- 新增支持 Feign 的服务消费者模块，服务名称为 “ microservice-feign-80 ”；  
+
+原文连接：[《 Rest微服务加入Feign负载均衡客户端组件 》](https://blog.csdn.net/Hello_World_QWP/article/details/87918412)  
+
+# 第六章：Netflix/Hystrix  
+## 1、Netflix/Hystrix 基本理论及其工作原理概述
+&#8195;&#8195;本节主要对 Netflix/Hystrix 进行了基本的介绍，包括：
+- 什么是 Hystrix ？
+- Hystrix 的作用？
+- Hystrix 的工作流程？
+- Hystrix 熔断器原理？
+- Hystrix 隔离性原理？
+- Hystrix 中的线程和线程池？
+- 使用线程池的优点？
+- 使用线程池的缺点？
+- Hystrix 在使用线程池时的成本管控？
+- Hystrix 中的 Semaphores ？
+- Hystrix 的折叠请求？
+- 折叠请求的优点/缺点？
+- Hystrix 为什么要使用折叠请求？
+- 使用折叠请求付出的代价？
+- Hystrix 中的请求缓存等。
+
+原文连接：[《 Netflix/Hystrix 基本理论及其工作原理概述 》](https://blog.csdn.net/Hello_World_QWP/article/details/88568378)
+
+## 2、Spring Cloud 进阶--Rest微服务加入Hystrix断路器实现服务熔断与服务降级
+&#8195;&#8195;在上一章节中，主要完成了 [《 Rest微服务加入Feign负载均衡客户端组件 》](https://blog.csdn.net/Hello_World_QWP/article/details/87918412)  ，并且完成了 [《 Netflix/Hystrix 基本理论及其工作原理概述 》](https://blog.csdn.net/Hello_World_QWP/article/details/88568378) 的详细简介，本节将带领读者完整在 Rest 微服务中集成 Hystrix 实现服务的熔断（服务端）与服务的降级（客户端），本节主要主要涉及模块，包括：  
+- 新增基于 Hystrix 的服务消费者模块，服务名称为 “ microservice-hystrix-8001 ”；
+- 修改整体微服务项目的公共子模块，供其它子模块引用，达到通用的目的，项目名为 “ microservice-api ”；
+- 新增支持 Feign 的服务消费者模块，服务名称为 “ microservice-feign-80 ”；  
+
+原文连接：[《 Hystrix断路器，实现服务的熔断与降级 》](https://blog.csdn.net/Hello_World_QWP/article/details/88087407)  
+
+## 3、Spring Cloud 进阶--Rest微服务加入Hystrix-Dashboard实时服务调用情况监控  
+&#8195;&#8195;在上一章节中，主要完成了 [《 Hystrix断路器，实现服务的熔断与降级 》](https://blog.csdn.net/Hello_World_QWP/article/details/88087407)  ，本节将带领读者使用 Hystrix-Dashboard 实现服务调用情况的实时监控，并学会如何看懂监控仪表盘，虽然很简单，但是还是提及一下，本节主要主要涉及模块，包括：  
+- 新增 hystrix-dashboard 服务调用情况监控服务模块，服务名称为 “ microservice-hystrix-dashboard-9001 ”；
+- 修改三台服务提供者服务器，项目名为 “ microservice-provider-8001 ~ 8003”；  
+监控结果看不懂怎么办？放心，已经精心准备好了，如下图：  
+《监控结果图》  
+
+原文连接：[《 Hystrix-Dashboard，实现微服务监控 》](https://blog.csdn.net/Hello_World_QWP/article/details/88087463)
 
 # 第七章：Netflix/Zuul
 接入zuul，实现服务的代理、路由、过滤
