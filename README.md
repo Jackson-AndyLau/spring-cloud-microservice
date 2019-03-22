@@ -168,8 +168,8 @@ Hystrix-Dashboard监控结果看不懂怎么办？放心，已经精心准备好
 原文连接：[《 Hystrix-Dashboard，实现微服务监控 》](https://blog.csdn.net/Hello_World_QWP/article/details/88087463)
 
 # 第七章：Netflix/Zuul  
-## 1、Zuul 基本理论概述
-<kbd>**Zuul 提供的三大功能：代理 + 路由 + 过滤**</kbd>
+## 1、Zuul 基本理论概述  
+<kbd>**Zuul 提供的三大功能：代理 + 路由 + 过滤**</kbd>  
 &#8195;&#8195;本章节主要对 Netflix 进行了基本的介绍，包括：
 - 什么是 Zuul？
 - Zuul 的过滤器？
@@ -203,7 +203,35 @@ IRule 常见的API：
 
 原文连接：[《 Ribbon核心组件IRule的使用及自定义负载均衡算法 》](https://blog.csdn.net/Hello_World_QWP/article/details/88185574)
 
-# 第八章：Spring Cloud Config
-接入config，实现服务端的配置
-接入config，实现客户端的配置
-接入config，分布式配置中心实战示例
+# 第八章：Spring Cloud Config  
+## 1、Config 基本理论概述
+&#8195;&#8195;本节主要对目前大规模微服务的庞大配置面临的管理问题 ？什么是 SpringCloud Config ？使用 SpringCloud Config 的作用 ？SpringCloud Config 与 GitHub 整合以及SpringCloud Config 与 Subversion 的整合。  
+
+原文连接：[《 Config 基本理论概述 》](https://blog.csdn.net/Hello_World_QWP/article/details/88568714)  
+
+## 2、Spring Cloud 进阶--Rest微服务加入Config实现分布式配置中心服务端的配置  
+&#8195;&#8195;在上一章节中，主要完成了 [《 Ribbon核心组件IRule的使用及自定义负载均衡算法 》](https://blog.csdn.net/Hello_World_QWP/article/details/88185574)，并且完成了 [《 Config 基本理论概述 》](https://blog.csdn.net/Hello_World_QWP/article/details/88568714)   对 Config 分布式配置中心进行了详细的简介，本节将带领读者使用基于 SpringCloud Config 分布式配置中心服务端的构建工作，涉及的服务模块包括：  
+- 新增远程 Github 分布式配置中心仓库，仓库名为 “ microservice-config-center ”；
+- 新增配置中心微服务配置文件，文件名为 “ etcp-microservice-config-cneter.yml ”；
+- 新构建基于 SpringCloud Config 的分布式配置中心服务端服务模块，主要作用为从远程配置中心获取指定的配置内容，模块名为 “ microservice-config-service-5001 ”；  
+
+原文连接：[《 Rest微服务加入Config实现分布式配置中心服务端的配置 》](https://blog.csdn.net/Hello_World_QWP/article/details/88087656)  
+
+## 3、Spring Cloud 进阶--Rest微服务加入Config实现分布式配置中心客户端的配置  
+&#8195;&#8195;在上一章节中，主要完成了 [《 Rest微服务加入Config实现分布式配置中心服务端的配置 》](https://blog.csdn.net/Hello_World_QWP/article/details/88087656) ，本节将带领读者使用基于 SpringCloud Config 分布式配置中心客户端的构建工作，涉及的服务模块包括：  
+- 新增配置中心微服务配置文件，文件名为 “ client-microservice-config-center.yml ”；
+- 新构建基于 SpringCloud Config 的分布式配置中心客户端服务模块模块，主要作用为测试从分布式配置中心服务器模块中获取指定的配置内容，模块名为 “ microservice-config-client-4001 ”；  
+
+原文连接：[《 Rest微服务加入Config实现分布式配置中心客户端的配置 》](https://blog.csdn.net/Hello_World_QWP/article/details/88087856)  
+
+## 4、Spring Cloud 进阶--Rest微服务加入Config实现分布式配置中心综合实战  
+&#8195;&#8195;在上一章节中已经完成了[《 Rest微服务加入Config实现分布式配置中心客户端的配置 》](https://blog.csdn.net/Hello_World_QWP/article/details/88087856)  构建工作，并顺利的从 GitHub 上获取到了相应的环境配置内容。接下来的这个章节将实现一个基于Spring Cloud Config 分布式配置中心的 Spring Cloud Eureka 注册中心 + 服务提供者模块 的一个微服务组合，并将两个微服务的配置内容统一交由 Spring Cloud Config 分布式配置中心服务端模块进行管理，通过该模块来获取相应的配置内容 ，完成不同环境（开发环境、测试环境、发布环境、生产环境等）的轻松切换。涉及的服务模块包括：  
+- 新增配置中心 Eureka 微服务配置文件，文件名为 “ eureka-client-microservice-config-center.yml ”；
+- 新增配置中心 Provider 服务提供者微服务配置文件，文件名为 “ etcp-client-microservice-config-center.yml ”；
+- 新构建基于 SpringCloud Config 分布式配置中心的 Eureka 服务注册中心模块，模块名为 “ microservice-config-eureka-7001 ”；
+- 新构建基于 SpringCloud Config 分布式配置中心的 Provider 服务提供者模块，模块名为 “ microservice-config-provider-8001 ”；
+
+原文连接：[《 Rest微服务加入Config实现分布式配置中心综合实战 》](https://blog.csdn.net/Hello_World_QWP/article/details/88087904)
+
+# 结束语
+&#8195;&#8195;辛苦了几个周，终于写完了，如果有不到之处，欢迎指出，楼主会在第一时间予以回应和修改，最后感谢各位老铁的支持呀！！！
