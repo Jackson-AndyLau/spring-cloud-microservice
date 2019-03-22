@@ -89,11 +89,30 @@ Eureka 微服务子模块注册中心项目创建完成后，项目工程概览�
 
 原文连接：[《 Rest 微服务加入 Eureka（集群） 》](https://blog.csdn.net/Hello_World_QWP/article/details/87979010)
 
-# 第四章：Netflix/Ribbon 
-接入Ribbon负载均衡客户端组件
+# 第四章：Netflix/Ribbon  
+## 1、Ribbon 基本理论概述  
+&#8195;&#8195;本节主要对 Netfix/Ribbon 进行了基本的介绍，包括：
+- 什么是 Ribbon ？
+- Ribbon 的作用？
+- Ribbon 的特性？
+- 以及Ribbon 的常用 API 的说明（当然具体的源码，需要自己去看咯）  
+
+原文连接：[《 Ribbon 基本理论概述 》](https://blog.csdn.net/Hello_World_QWP/article/details/86476944)  
+
+## 2、Spring Cloud 进阶--Rest微服务加入Ribbon负载均衡客户端组件实现负载均衡  
+&#8195;&#8195;在前面章节中，完成了 [《 Rest 微服务加入 Eureka（集群） 》](https://blog.csdn.net/Hello_World_QWP/article/details/87979010)注册中心的集成，并介绍到了 [《 Ribbon 基本理论概述 》](https://blog.csdn.net/Hello_World_QWP/article/details/86476944)   ，本节将带领读者完成，在 Rest 微服务中加入 Ribbon 服务均衡客户端组件实现负载均衡，总共分为两个阶段：  
+&#8195;&#8195;第一阶段为：Ribbon 的初始配置；  
+&#8195;&#8195;第二阶段为：Ribbon 的负载均衡；  
+本节主要主要涉及模块，包括：  
+- 服务提供者一号服务器，服务名称为 “ microservice-provider-8001 ”
+- 服务提供者一号服务器，服务名称为 “ microservice-provider-8002 ”
+- 服务提供者一号服务器，服务名称为 “ microservice-provider-8003 ”
+- 消费者服务器，服务名称为 “ microservice-consumer-80 ”  
+
+原文连接：[《 Rest微服务加入Ribbon负载均衡客户端组件实现负载均衡 》](https://blog.csdn.net/Hello_World_QWP/article/details/87917236)  
 
 # 第五章：OpenFeign/Feign
-接入Feign负载均衡客户端组件（通过接口方式调用Rest服务）
+
 
 # 第六章：Netflix/Hystrix
 接入Hystrix断路器，实现服务的熔断与降级
