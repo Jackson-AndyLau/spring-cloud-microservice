@@ -161,13 +161,47 @@ Eureka 微服务子模块注册中心项目创建完成后，项目工程概览�
 &#8195;&#8195;在上一章节中，主要完成了 [《 Hystrix断路器，实现服务的熔断与降级 》](https://blog.csdn.net/Hello_World_QWP/article/details/88087407)  ，本节将带领读者使用 Hystrix-Dashboard 实现服务调用情况的实时监控，并学会如何看懂监控仪表盘，虽然很简单，但是还是提及一下，本节主要主要涉及模块，包括：  
 - 新增 hystrix-dashboard 服务调用情况监控服务模块，服务名称为 “ microservice-hystrix-dashboard-9001 ”；
 - 修改三台服务提供者服务器，项目名为 “ microservice-provider-8001 ~ 8003”；  
-监控结果看不懂怎么办？放心，已经精心准备好了，如下图：  
+
+Hystrix-Dashboard监控结果看不懂怎么办？放心，已经精心准备好了，如下图：  
 《监控结果图》  
 
 原文连接：[《 Hystrix-Dashboard，实现微服务监控 》](https://blog.csdn.net/Hello_World_QWP/article/details/88087463)
 
-# 第七章：Netflix/Zuul
-接入zuul，实现服务的代理、路由、过滤
+# 第七章：Netflix/Zuul  
+## 1、Zuul 基本理论概述
+<kbd>**Zuul 提供的三大功能：代理 + 路由 + 过滤**</kbd>
+&#8195;&#8195;本章节主要对 Netflix 进行了基本的介绍，包括：
+- 什么是 Zuul？
+- Zuul 的过滤器？
+- 以及 Zuul 2.x 的工作原理？  
+&#8195;&#8195;Zuul 2.0 工作原理：  
+从更高一个层面上来看，Zuul 2.0 是一个运行预过滤器(入站过滤器)的 Netty 服务器，它运行预过滤器(入站过滤器)，然后使用 Netty 客户端代理请求，再在运行后置过滤器(出站过滤器)后返回响应，如下图：  
+《原理图》
+
+原文连接：[《 Zuul 基本理论概述 》](https://blog.csdn.net/Hello_World_QWP/article/details/88568602)  
+
+## 2、Spring Cloud 进阶--Rest微服务加入zuul微服务网关的代理、路由、过滤及访问映射规则配置
+&#8195;&#8195;在上一章节中，主要完成了 [《 Hystrix-Dashboard，实现微服务监控 》](https://blog.csdn.net/Hello_World_QWP/article/details/88087463)，并且完成了 [《 Zuul 基本理论概述 》](https://blog.csdn.net/Hello_World_QWP/article/details/88568602)   对 zuul 进行了详细的简介，本节将带领读者使用 zuul 来完成服务的代理、路由、过滤及访问映射规则配置，本节涉及模块，包括：
+- 新增 zuul 路由服务器模块，服务名称为 “ microservice-zuul-6001 ”；  
+
+原文连接：[《 zuul微服务网关的代理、路由、过滤及访问映射规则配置 》](https://blog.csdn.net/Hello_World_QWP/article/details/88087562)  
+
+## 3、Spring Cloud 进阶--Ribbon核心组件IRule的使用及自定义负载均衡算法  
+&#8195;&#8195;在上一章节中，主要完成了 [《 zuul微服务网关的代理、路由、过滤及访问映射规则配置 》](https://blog.csdn.net/Hello_World_QWP/article/details/88087562) ，本节将带领读者一步一步认识Ribbon的核心插件 <kbd>**“ IRule ”**</kbd>的常用 API 以及自定义算法规则详细说明，本节涉及的服务模块包括：  
+- 修改消费者模块 “ microservice-consumer-80 ”，新增具体的算法配置类，实现指定规则的调用；  
+IRule 常见的API：  
+
+|API|说明|
+|:-----------:|:-----------|
+|RoundRobinRule|广为人知和最基本的负载平衡策略，即轮询算法。（是Ribbon默认的负载均衡机制）|  
+|RandomRule|一种随机分配现有流量的负载平衡策略，即随机访问算法|
+|RetryRule|先按照 RoundRobinRule 的策略访问服务，如果访问的服务宕机或者出现异常的情况，则在指定时间内会进行重试，访问其它可用的服务|
+|BestAvailableRule|首先会先过滤掉由于多次访问故障而处于断路器跳闸状态的服务，然后选择一个并发量最小的服务访问|
+|ZoneAvoidanceRule|默认规则,复合判断server所在区域的性能和server的可用性选择服务器|
+|AvailabilityFilteringRule|首先会先过滤掉由于多次访问故障而处于断路器跳闸状态的服务，还有并发的连接数量超过阈值的服务，然后对剩余的服务列表按照轮询策略进行访问|
+|WeightedResponseTimeRule|根据平均响应时间计算所有服务的权重，响应时间越快服务权重越大被选中的概率越高。刚启动时如果统计信息不足，则使用RoundRobinRule策略，等统计信息足够，会切换到WeightedResponseTimeRule|  
+
+原文连接：[《 Ribbon核心组件IRule的使用及自定义负载均衡算法 》](https://blog.csdn.net/Hello_World_QWP/article/details/88185574)
 
 # 第八章：Spring Cloud Config
 接入config，实现服务端的配置
