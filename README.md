@@ -18,7 +18,7 @@
 &#8195;&#8195;在进行微服务进阶之前，首先来认识 <kbd>**Dubbo**</kbd> 与 <kbd>**Spring Cloud**</kbd>，前段时间在社区中看到有不少的开发工作者都用 Dubbo 与 Spring Cloud 进行比较，为什么会导致这么多人使用这两个框架进行比较呢，归根一点，就是 Dubbo 使用 RPC 进行通信 ,而 Spring Cloud 使用了 REST 方式。
 
 RPC 工作原理：  
-《上工作原理图》
+![RPC 工作原理](https://raw.githubusercontent.com/Jackson-AndyLau/pictures-storage/master/001/201803/20181210134428.png)  
 
 REST 工作原理：  
 &#8195;&#8195;表述性状态传递是一组架构约束条件和原则。满足这些约束条件和原则的应用程序或设计就是 RESTful。需要注意的是，<kbd>**REST 是设计风格而不是标准**</kbd>。REST 通常基于使用 HTTP、URI、和XML（标准通用标记语言下的一个子集）以及HTML（标准通用标记语言下的一个应用）这些现有的广泛流行的协议和标准。  
@@ -46,10 +46,10 @@ REST 工作原理：
 - 微服务消费者子模块，服务名为 “ microservice-consumer-80 ”；  
 
 微服务提供者模块创建完成后，工程总览，如下图：  
-《缺少工程图》  
+![微服务提供者模块](https://raw.githubusercontent.com/Jackson-AndyLau/pictures-storage/master/001/201803/20190223162339.png)  
 
 微服务消费者模块创建完成后，项目概览如下图：
-《缺少工程图》  
+![微服务消费者模块](https://raw.githubusercontent.com/Jackson-AndyLau/pictures-storage/master/001/201803/20190225110256.png)  
 
 原文连接：[《 Rest 微服务基础模块构建 》](https://blog.csdn.net/Hello_World_QWP/article/details/85912927)  
 
@@ -76,7 +76,7 @@ Eureka 基本架构图：
 - 修改的微服务消费者模块，服务名称 “ microservice-consumer-80 ”；  
 
 Eureka 微服务子模块注册中心项目创建完成后，项目工程概览如下图：  
-《工程图》
+![Eureka 微服务子模块注册中心项目](https://raw.githubusercontent.com/Jackson-AndyLau/pictures-storage/master/001/201803/20190226141202.png)  
 
 原文连接：[《 Rest 微服务加入 Eureka（单机） 》](https://blog.csdn.net/Hello_World_QWP/article/details/85913125)  
 
@@ -145,7 +145,10 @@ Eureka 微服务子模块注册中心项目创建完成后，项目工程概览�
 - 折叠请求的优点/缺点？
 - Hystrix 为什么要使用折叠请求？
 - 使用折叠请求付出的代价？
-- Hystrix 中的请求缓存等。
+- Hystrix 中的请求缓存等。  
+
+&#8195;&#8195;下面的示例取自: Hystrix-Request Collapsing。 稍微修改一下，批量窗口的大小增加到2秒。该示例演示了正在执行的四个并发调用，并展示了如何将四个并发请求批处理在一起。为了保持示例的简洁性，下面的时序图只展示了前两个调用过程（关于请求折叠的更多内容，请移步到原文）：  
+![Hystrix-Request Collapsing](https://raw.githubusercontent.com/Jackson-AndyLau/pictures-storage/master/001/201803/20190226141205.gif)  
 
 原文连接：[《 Netflix/Hystrix 基本理论及其工作原理概述 》](https://blog.csdn.net/Hello_World_QWP/article/details/88568378)
 
@@ -176,7 +179,7 @@ Hystrix-Dashboard监控结果看不懂怎么办？放心，已经精心准备好
 - 以及 Zuul 2.x 的工作原理？  
 &#8195;&#8195;Zuul 2.0 工作原理：  
 从更高一个层面上来看，Zuul 2.0 是一个运行预过滤器(入站过滤器)的 Netty 服务器，它运行预过滤器(入站过滤器)，然后使用 Netty 客户端代理请求，再在运行后置过滤器(出站过滤器)后返回响应，如下图：  
-《原理图》
+![Zuul 2.0 工作原理](https://raw.githubusercontent.com/Jackson-AndyLau/pictures-storage/master/001/201803/zuul-options.png)
 
 原文连接：[《 Zuul 基本理论概述 》](https://blog.csdn.net/Hello_World_QWP/article/details/88568602)  
 
