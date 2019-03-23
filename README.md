@@ -31,7 +31,7 @@
 	- [2、Spring Cloud 进阶--Rest微服务加入Config实现分布式配置中心服务端的配置](https://github.com/Jackson-AndyLau/spring-cloud-microservice/blob/master/README.md#2spring-cloud-进阶--rest微服务加入config实现分布式配置中心服务端的配置)  
 	- [3、Spring Cloud 进阶--Rest微服务加入Config实现分布式配置中心客户端的配置](https://github.com/Jackson-AndyLau/spring-cloud-microservice/blob/master/README.md#3spring-cloud-进阶--rest微服务加入config实现分布式配置中心客户端的配置)  
 	- [4、Spring Cloud 进阶--Rest微服务加入Config实现分布式配置中心综合实战](https://github.com/Jackson-AndyLau/spring-cloud-microservice/blob/master/README.md#4spring-cloud-进阶--rest微服务加入config实现分布式配置中心综合实战)  
-- [x][结束语](https://github.com/Jackson-AndyLau/spring-cloud-microservice/blob/master/README.md#结束语)  
+- [x] [结束语](https://github.com/Jackson-AndyLau/spring-cloud-microservice/blob/master/README.md#结束语)  
 
 # 第一章：微服务理论概述
 ## 1、深入理解 REST 与 RPC  
